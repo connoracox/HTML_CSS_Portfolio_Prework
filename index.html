@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Connor's Portfolio</li>
+            <li><a href="index.html", style="color:white;">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="personal_achievements.html">Personal Achievements</a></li>
+            <li><a href="sourdough.html">Sourdough Blog</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px;">Connor Cox</h1>
+            <pre style="font-family:Arial, Helvetica, sans-serif;">
+                Adventurer    |    Bread Baker    |    Aspiring Programmer
+            </pre>
+        </div>
+    </div>
+    <main>
+        <div id="main">
+            <article class="main-articles">
+                <h1 style="font-size:60px;">Welcome.</h1>
+                <strong>Welcome to my website! To learn more about me, my interests, <br>
+                    my backgound, and why I am interested in becoming a Software Engineer,<br> 
+                    check out the other pages of my website:</strong><br><br>
+            </article>
+            <article class="main_page_nav">
+                <button onclick="document.location='about_me.html'">About Me</button>
+                <button onclick="document.location='personal_achievements.html'">Personal Achievements</button><br>
+                <button onclick="document.location='sourdough.html'">Sourdough Blog</button>
+                <button onclick="document.location='contact_me.html'">Contact Me</button>
+            </article>
+        </div>
+        <div id="side">
+            <article class="side-articles" id="profile">
+                <img id="profile-image" src="images/me.jpeg">
+                <div id="profile-details">
+                    <h2>Connor Cox</h2>
+                    <ul>
+                        <li>140 Woodside Green</li>
+                        <li>Stamford, CT 06905</li>
+                        <li>281.450.1114</li>
+                        <li><a href="mailto:connor.a.cox@gmail.com">connor.a.cox@gmail.com</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="side-articles">
+                <h1>My dog Glimmer</h1>
+                <strong><small>
+                    My dog's name is Glimmer, she is a 9 year-old Mini Australian Shepherd.
+                    We adopted her in July of 2020 during the COVID-19 Pandemic.
+                    Here are some photos of her.
+                </small></strong><br><br>
+                <img id="glimmer-image" src="images/glimmer1.jpeg"><br>
+                <img id="glimmer-image" src="images/glimmer2.jpeg"><br>
+                <img id="glimmer-image" src="images/glimmer3.jpeg"><br>
+            </article>
+            <article class="side-articles">
+                <h1>Contact Me</h1>
+                <strong><small>Please contact me with questions</small></strong>
+                <br>
+                <form action="mailto:connor.a.cox@gmail.com" method="POST">
+                    <label for="name"><strong>Name</strong></label>
+                    <br>
+                    <input type="text" id="name" placeholder="Your name...">
+                    <br>
+                    <label for="body"><strong>Message</strong></label>
+                    <br>
+                    <textarea id="body" placeholder="Your message..." rows="5"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div>
+            &copy Connor Cox 2023
+        </div>
+    </footer>
+</body>
+</html>

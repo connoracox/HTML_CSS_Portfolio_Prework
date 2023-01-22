@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Connor's Portfolio</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="personal_achievements.html">Personal Achievements</a></li>
+            <li><a href="sourdough.html">Sourdough Blog</a></li>
+            <li><a href="contact_me.html", style="color:white;">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div id="main", style="width:100%;">
+        <article class="main-articles" id="profile">
+            <img id="profile-image" src="images/me.jpeg">
+            <div id="profile-details">
+                <h2>Connor Cox</h2>
+                <ul>
+                    <li style="list-style-type:none;">140 Woodside Green</li>
+                    <li style="list-style-type:none;">Stamford, CT 06905</li>
+                    <li style="list-style-type:none;">281.450.1114</li>
+                    <li style="list-style-type:none;"><a href="mailto:connor.a.cox@gmail.com">connor.a.cox@gmail.com</a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="side-articles", style="width:90%;">
+            <strong><small>Thanks for visiting my website! Let me know what you think 
+                            about your experience below!<br>
+                            I look forward to staying in touch. Follow me on Instagram 
+                            by clicking the icon below.                        
+            </small></strong>
+            <br><br>
+            <a href="https://www.instagram.com/notconnorcox" target="_blank"><img id="instagram_logo" 
+                src="images/instagram_logo.png", style="height:30px;width:30px;"></a>
+        </article>
+        <article class="side-articles", style="width:90%;">
+            <h1>Contact Me</h1>
+            <strong><small>Please contact me with questions</small></strong>
+            <br>
+            <form action="mailto:connor.a.cox@gmail.com" method="POST">
+                <label for="name"><strong>Name</strong></label>
+                <br>
+                <input type="text" id="name" placeholder="Your name...">
+                <br>
+                <label for="body"><strong>Message</strong></label>
+                <br>
+                <textarea id="body" placeholder="Your message..." rows="5"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </div>
+    <footer>
+        <hr>
+        <div>
+            &copy Connor Cox 2023
+        </div>
+    </footer>
+</body>
+</html>
